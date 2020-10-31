@@ -1,0 +1,107 @@
+/*########################################################################################
+simple web shell template, css, 31.10.2020
+########################################################################################*/
+
+/* ########## basic page settings - big screen size ##########  */
+body				{padding:0px; margin:0px; background:#ffffff; color:#333333; font-family:'Segoe UI',sans-serif; -webkit-text-size-adjust: none;}
+
+nav					{position:fixed; top:0px; left:0px; padding:0px; margin:0px; background:#eeeeee; height:90px; width:100%; border-top:10px solid #337ab7; border-bottom:1px solid #cccccc; z-index:500}
+nav div.head		{padding:0px; margin:0px auto; width:1200px;}
+nav div.logo		{padding:0px; margin:0px 5px 0px 40px; float:left;}
+nav div.logo img	{padding:0px; margin:16px 16px 0px 0px; display:inline-block; width:60px; float:left;}
+nav div.logo span	{padding:0px; margin:16px 0px 0px 0px; display:inline-block; font-size:38px; font-weight:bold; color:#333333;}
+nav div#navi		{padding:0px; margin:0px 40px 0px 0px; color:#cccccc; font-size:22px; float:right;}
+nav div#mobile		{display:none;}
+nav a				{display:inline-block; padding:0px; margin:32px 3px 0px 3px; font-size:22px; font-weight:400; color:#333333; text-decoration:none}
+nav a.active		{color:#337ab7; font-weight:bold}
+nav a:hover			{color:#337ab7; text-decoration:underline}
+
+div.main			{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300}
+div.main h1			{padding:10px 0px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
+div.main h2			{padding:15px 10px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
+div.main h3			{padding:10px 10px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
+div.main p			{padding:10px 10px 5px 40px; margin:0px; font-size:18px; font-weight:normal;}
+div.main ul			{padding:10px 10px 5px 40px; margin:0px 0px 0px 0px;}
+div.main li			{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal}
+div.main hr			{padding:0px; margin:30px 20px 30px 40px; border:none; border-top:1px solid #cccccc}
+
+div.main a			{color:#337ab7; text-decoration:none}
+div.main a:hover	{color:#337ab7; text-decoration:underline}
+div.main a:active 	{color:#337ab7; text-decoration:underline}
+div.main a[target='_blank'] 	{background-position:center right; background-repeat:no-repeat; padding-right:15px; background-image:url(../images/extlink.png)}
+
+div.main .col0		{padding:0px; margin:0px; float:left; width:98%}
+div.main .col1      {padding:0px; margin:0px; width:49%; float:left; border:0px solid lime}
+div.main .col2		{padding:0px; margin:0px; width:49%; float:left; border:0px solid red}
+
+footer 				{padding:0px 0px 0px 0px; margin:0px; border-top:1px solid #cccccc;}
+footer div			{padding:0px 0px 0px 0px; margin:0px auto; width: 1200px;}
+footer p			{padding:15px 40px 10px 40px;  margin:0px; font-size:16px}
+footer p.version	{float:left}
+footer p.legal		{float:right}
+footer a			{color:#337ab7; text-decoration:none; white-space:nowrap;}
+footer a:hover		{color:#337ab7; text-decoration:underline}
+footer a:active 	{color:#337ab7; text-decoration:underline}
+
+noscript			{display:none}
+
+/* laptop size */
+@media (max-width: 1200px) {
+	nav div.head		{width: 100%;}
+	div.main			{width: 100%; border:none}
+	footer div			{width: 100%;}
+}
+
+/* tablet size */
+@media (max-width: 1020px) {
+	nav					{height:80px;}
+	nav div.logo		{margin:0px 0px 0px 40px;}
+	nav div.logo img	{margin:15px 15px 0px 0px; width:50px;}
+	nav div.logo span	{margin:18px 0px 0px 0px;font-size:30px; font-weight:700}
+	nav a				{margin:30px 2px 0px 2px; font-size:18px;}
+	div.main .col1		{width:100%;}
+	div.main .col2		{width:100%;}
+}
+
+/* smart phone size */
+@media (max-width: 800px) {
+	nav					{height:70px;}
+	nav div.logo		{margin:0px 0px 0px 20px; float:none;}
+	nav div.logo img	{margin:10px 10x 0px 0px; width:40px;}
+	nav div.logo span	{margin:18px 0px 0px 0px;font-size:28px;}
+
+	nav div#navi		{margin:-500px 0px 0px 0px; background:#eeeeee; float:none}
+	nav div#navi span	{display:none}
+	nav div#mobile		{display:inline-block; position:absolute; right:20px; top:22px; font-family:mono-space; padding:0px; margin:0px; font-size:32px; line-height: 26px; font-weight:bold; color:#333333; cursor:pointer;}
+	nav a				{display:block; padding:10px 10px 10px 20px; margin:0px; font-size:16px; font-weight:normal; color:#333333; border-bottom: 1px solid #cccccc; text-decoration:none}
+
+	div.main			{padding:90px 0px 0px 0px; width:100%; border:none}
+	div.main h1			{padding:10px 5px 10px 20px; font-size:26px;}
+	div.main h2			{padding:10px 5px 10px 20px; font-size:24px}
+	div.main h3			{padding:10px 5px 0px 20px; font-size:22px}
+	div.main p			{padding:10px 10px 5px 20px; font-size:16px}
+	div.main ul			{padding:10px 10px 5px 20px;}
+	div.main li			{margin:0px 0px 0px 20px; font-size:16px;}
+	div.main hr			{margin:20px 20px 15px 20px;}
+
+	footer p            {padding:10px 10px 0px 10px; margin:0px; font-size:15px}
+	footer p.version	{float:none; text-align:center; display:block}
+	footer p.legal		{float:none; text-align:center; display:block; margin-bottom:20px}
+
+	noscript			{position:absolute; top:0px; right:0px; padding:10px; margin:0px;; display:inline-block; text-align:center; border:1px solid #cccccc; background:#ffffff; z-index: 600}
+	noscript a			{display:inline-block; padding:0px; margin:0px; font-size:14px; color:#333333; border:none; text-decoration:none}
+}
+
+/* iphone 5,SE */
+@media (max-width: 320px) {
+	nav div.logo span	{font-size:24px;}
+}
+
+/* print view */
+@media print {
+	nav   				{position:absolute; background:none;}
+	nav div#navi		{display:none;}
+	nav div#mobile		{display:none;}
+	noscript			{display:none}
+}
+
