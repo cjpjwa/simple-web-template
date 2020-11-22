@@ -88,7 +88,7 @@ noscript			{display:none}
 	footer p.version	{float:none; text-align:center; display:block}
 	footer p.legal		{float:none; text-align:center; display:block; margin-bottom:20px}
 
-	noscript			{position:absolute; top:0px; right:0px; padding:10px; margin:0px;; display:inline-block; text-align:center; border:1px solid #cccccc; background:#ffffff; z-index: 600}
+	noscript			{position:fixed; top:0px; right:0px; padding:10px; margin:0px;; display:inline-block; text-align:center; border:1px solid #cccccc; background:#ffffff; z-index: 600}
 	noscript a			{display:inline-block; padding:0px; margin:0px; font-size:14px; color:#333333; border:none; text-decoration:none}
 }
 
