@@ -4,7 +4,6 @@
 <!-- general  -->
 <title>Simple Web Shell</title>
 <meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="keywords" content="web, template, shell, html css" />
 <meta name="description" content="Simple Web Shell" />
 <meta name="Author" content="P. Janko" />
@@ -13,6 +12,7 @@
 <!-- ios webapp  -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#cccccc" />
 <!-- win tile icon and background  -->
 <meta name="msapplication-TileColor" content="#999999" />
 <meta name="msapplication-TileImage" content="touch-icon.png" />
@@ -28,6 +28,7 @@
 ##########################################################
 Date			Version			Description
 31.10.2020		0.01			initial version
+12.05.2021		0.02			add system font and theme color
 ##########################################################
 -->
 </head>
@@ -61,12 +62,22 @@ Date			Version			Description
 			<li>Fast loading on different devices.</li>
 			<li>Minimalistic and responsive design.</li>
 		</ul>
+
 		<hr />
 		<h1>First Heading - Single Column</h1>
 		<h2>Second Heading</h2>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 		<h3>Third Heading</h3>
 		<p>This is a paragraph containing a <a href="#" >link</a>. This is an <a href="#" target="_blank" rel="noopener">external link</a> sample.</p>
+		<h3>Font Check</h3>
+		<ul>
+			<li style="font-family:monospace">The quick brown fox 123. mono</li>
+			<li style="font-family:serif">The quick brown fox 123. serif</li>
+			<li style="font-family:sans-serif">The quick brown fox 123. sans</li>
+			<li style="font-family:system-ui, -apple-system, 'Segoe UI', sans-serif">The quick brown fox 123. system</li>
+			<li>The quick brown fox 123. css</li>
+		</ul>
+		
 		<hr />
 	</div>
 	<br style="clear:both" />
