@@ -1,5 +1,5 @@
 /*########################################################################################
-simple web shell template, css, 12.05.2021
+simple web shell template, css, 02.10.2021
 ########################################################################################*/
 
 /* ########## basic page settings - big screen size ##########  */
@@ -8,7 +8,7 @@ body				{padding:0px; margin:0px; background:#ffffff; color:#333333; font-family
 nav					{position:fixed; top:0px; left:0px; padding:0px; margin:0px; background:#eeeeee; height:90px; width:100%; border-top:10px solid #337ab7; border-bottom:1px solid #cccccc; z-index:500}
 nav div.head		{padding:0px; margin:0px auto; width:1200px;}
 nav div.logo		{padding:0px; margin:0px 5px 0px 40px; float:left;}
-nav div.logo img	{padding:0px; margin:16px 16px 0px 0px; display:inline-block; width:60px; float:left;}
+nav div.logo img	{padding:0px; margin:16px 16px 0px 0px; display:inline-block; width:60px; float:left; cursor:pointer;}
 nav div.logo span	{padding:0px; margin:17px 0px 0px 0px; display:inline-block; font-size:38px; font-weight:bold; color:#333333;}
 nav div#navi		{padding:0px; margin:0px 40px 0px 0px; color:#cccccc; font-size:22px; float:right;}
 nav div#mobile		{display:none;}
@@ -65,14 +65,14 @@ noscript			{display:none}
 
 /* smart phone size */
 @media (max-width: 800px) {
-	nav					{height:70px;}
+	nav					{height:60px;}
 	nav div.logo		{margin:0px 0px 0px 20px; float:none;}
 	nav div.logo img	{margin:10px 10px 0px 0px; width:40px;}
-	nav div.logo span	{margin:16px 0px 0px 0px;font-size:28px;}
+	nav div.logo span	{margin:16px 0px 0px 0px;font-size:24px;}
 
 	nav div#navi		{margin:-500px 0px 0px 0px; background:#eeeeee; float:none}
 	nav div#navi span	{display:none}
-	nav div#mobile		{display:inline-block; position:absolute; right:20px; top:22px; font-family: monospace; padding:0px; margin:0px; font-size:32px; line-height: 26px; font-weight:bold; color:#333333; cursor:pointer;}
+	nav div#mobile		{display:inline-block; position:absolute; right:20px; top:18px; padding:0px; margin:0px; font-size:32px; line-height:26px; font-weight:bold; color:#333333; cursor:pointer;}
 	nav a				{display:block; padding:10px 10px 10px 20px; margin:0px; font-size:16px; font-weight:normal; color:#333333; border-bottom: 1px solid #cccccc; text-decoration:none}
 
 	div.main			{padding:90px 0px 0px 0px; width:100%; border:none}

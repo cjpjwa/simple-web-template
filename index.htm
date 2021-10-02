@@ -29,6 +29,7 @@
 Date			Version			Description
 31.10.2020		0.01			initial version
 12.05.2021		0.02			add system font and theme color
+02.10.2021		0.03			remove inline onclick events
 ##########################################################
 -->
 </head>
@@ -36,8 +37,8 @@ Date			Version			Description
 <!-- navigation -->
 <nav>
 	<div class="head">
-		<div class="logo"><img src="images/logo.png" alt="Your Logo" onclick="document.location.href='index.htm'" /><span>Simple Web Shell</span></div>
-		<div id="mobile" onclick="showHideNav();">≡</div>
+		<div class="logo"><img src="images/logo.png" alt="Your Logo" id="home" /><span>Simple Web Shell</span></div>
+		<div id="mobile">≡</div>
 		<div id="navi">
 			<a href="index.htm" class="active">Home</a>
 			<span>|</span>
@@ -56,7 +57,7 @@ Date			Version			Description
 <div class="main" id="top">
 	<div class="col0">
 		<h1>Simple Web Shell</h1>
-		<p>Simple Web Shell provides a basic HTML and CSS template for responsive web sites. The focus is on:</p>
+		<p>Simple Web Shell provides a basic HTML and simple CSS template for responsive web sites. The focus is on:</p>
 		<ul>
 			<li>Information/Text-oriented web sites.</li>
 			<li>Fast loading on different devices.</li>
@@ -108,7 +109,7 @@ Date			Version			Description
 <!-- footer -->
 <footer>
 	<div>
-		<p class="version">© <a href="#">www.yourdomain.xyz</a> 10/2020</p>
+		<p class="version">© <a href="#">www.yourdomain.xyz</a> 10/2021</p>
 		<p class="legal"><a href="#">Contact</a> | <a href="#">Disclaimer</a> | <a href="#">Legal Stuff</a></p>
 	</div>
 </footer>

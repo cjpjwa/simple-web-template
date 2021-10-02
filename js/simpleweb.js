@@ -1,5 +1,5 @@
 //########################################################################################
-//simple web shell template, javascript, 31.10.2020
+//simple web shell template, javascript, 02.10.2021
 //########################################################################################
 //strict mode
 "use strict";
@@ -33,5 +33,12 @@ function resetNav() {
 }
 
 //########################################################################################
-//trigger reset navigation
-window.addEventListener("resize", resetNav);
+//init event listener
+window.addEventListener("resize", resetNav); //trigger reset navigation
+document.addEventListener("DOMContentLoaded", function(event) {
+	//handle mobile navigation and logo home function
+	document.getElementById("mobile").addEventListener("click", showHideNav);
+	document.getElementById("home").addEventListener("click", function(e) {document.location.href="index.htm";});
+});
+
+
