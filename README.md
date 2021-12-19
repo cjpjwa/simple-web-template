@@ -7,7 +7,7 @@ The focus is on:
 - Minimalistic and responsive design.
 
 
-##CSS Breakpoints
+## CSS Breakpoints
 To support responsive design two navigation patterns are supported.
 Navigation with links in the header menue and navigation with hamburger menue.
 The navigation patterns are triggered by the following CSS breakpoints:
