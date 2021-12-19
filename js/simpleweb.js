@@ -1,11 +1,11 @@
 //########################################################################################
-//simple web shell template, javascript, 02.10.2021
+//simple web template, javascript, 19.12.2021
 //########################################################################################
 //strict mode
 "use strict";
 //########################################################################################
-var mobileWidth   = 800;		//integer, css value in px: below switch to dropdown menu
-var mobileNavi    = false;		//boolean, dropdown status: false = hidden, true = shown)
+var mobileWidth = 800;		//integer, css value in px: below switch to dropdown menu
+var mobileNavi  = false;	//boolean, dropdown status: false = hidden, true = shown)
 //########################################################################################
 //show/hide mobile navigation dropdown menue, rotate hamburger icon
 function showHideNav() {
@@ -36,9 +36,7 @@ function resetNav() {
 //init event listener
 window.addEventListener("resize", resetNav); //trigger reset navigation
 document.addEventListener("DOMContentLoaded", function(event) {
-	//handle mobile navigation and logo home function
-	document.getElementById("mobile").addEventListener("click", showHideNav);
-	document.getElementById("home").addEventListener("click", function(e) {document.location.href="index.htm";});
+	document.getElementById("mobile").addEventListener("click", showHideNav); //handle mobile navigation
 });
 
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- general  -->
-<title>Simple Web Shell</title>
+<!-- general -->
+<title>Simple Web Template</title>
 <meta charset="utf-8" />
-<meta name="keywords" content="web, template, shell, html css" />
-<meta name="description" content="Simple Web Shell" />
+<meta name="keywords" content="web, template, html, css" />
+<meta name="description" content="Simple Web Template" />
 <meta name="Author" content="P. Janko" />
 <!-- use latest ie -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,13 +23,11 @@
 <script src="js/simpleweb.js"></script>
 <!--
 ##########################################################
- Simple Web Shell, (c) 2020 webapps@cjpj, P. Janko
+ Simple Web Template, (c) 2021 webapps@cjpj, P. Janko
  MIT License: https://www.cjpj.de/contact.htm#terms
 ##########################################################
-Date			Version			Description
-31.10.2020		0.01			initial version
-12.05.2021		0.02			add system font and theme color
-02.10.2021		0.03			remove inline onclick events
+Date		Version		Description
+19.12.2021	0.01		initial version
 ##########################################################
 -->
 </head>
@@ -37,7 +35,7 @@ Date			Version			Description
 <!-- navigation -->
 <nav>
 	<div class="head">
-		<div class="logo"><img src="images/logo.png" alt="Your Logo" id="home" /><span>Simple Web Shell</span></div>
+		<div class="logo"><a href="index.htm"><img src="images/logo.png" alt="Your Logo" /></a><span>Simple Web Template</span></div>
 		<div id="mobile">≡</div>
 		<div id="navi">
 			<a href="index.htm" class="active">Home</a>
@@ -56,10 +54,10 @@ Date			Version			Description
 <!-- content -->
 <div class="main" id="top">
 	<div class="col0">
-		<h1>Simple Web Shell</h1>
-		<p>Simple Web Shell provides a basic HTML and simple CSS template for responsive web sites. The focus is on:</p>
+		<h1>Simple Web Template</h1>
+		<p>Simple Web Template provides a static, basic and simple HTML and CSS template for responsive web sites. The focus is on:</p>
 		<ul>
-			<li>Information/Text-oriented web sites.</li>
+			<li>Text-based web sites.</li>
 			<li>Fast loading on different devices.</li>
 			<li>Minimalistic and responsive design.</li>
 		</ul>
@@ -78,10 +76,10 @@ Date			Version			Description
 			<li style="font-family:system-ui, -apple-system, 'Segoe UI', sans-serif">The quick brown fox 123. system</li>
 			<li>The quick brown fox 123. css</li>
 		</ul>
-		
+
 		<hr />
 	</div>
-	<br style="clear:both" />
+	<br class="clearfl" />
 	<div class="col1">
 		<h1>First Heading - Left Column</h1>
 		<h2>Second Heading</h2>
@@ -104,7 +102,7 @@ Date			Version			Description
 		</ul>
 		<br />
 	</div>
-	<br style="clear:both" />
+	<br class="clearfl" />
 </div>
 <!-- footer -->
 <footer>
@@ -113,13 +111,14 @@ Date			Version			Description
 		<p class="legal"><a href="#">Contact</a> | <a href="#">Disclaimer</a> | <a href="#">Legal Stuff</a></p>
 	</div>
 </footer>
-	<br style="clear:both" />
-		<noscript>
-			<a href="index.htm">Home</a>
-			<a href="#">Link1</a>
-			<a href="#">Link2</a>
-			<a href="#">Link3</a>
-			<a href="#">Link4</a>
-		</noscript>
+<br class="clearfl" />
+<!-- fallback navigation -->
+<noscript>
+	<a href="index.htm">Home</a>
+	<a href="#">Link1</a>
+	<a href="#">Link2</a>
+	<a href="#">Link3</a>
+	<a href="#">Link4</a>
+</noscript>
 </body>
 </html>
