@@ -6,7 +6,7 @@ The focus is on:
 - Fast loading on different devices.
 - Minimalistic and responsive design.
 
-##HTML Page Structure
+## HTML Page Structure
 The page structure is based on three sections:
 
 - Head section with basic navigation: ```<nav>...</nav>```
@@ -32,7 +32,7 @@ The page structure is based on three sections:
 ```
 Code Sample 1: Basic page structure
 
-###Head Section
+### Head Section
 The head section contains three subsections.
 Depending on screen size the appearence may differ, see CSS media queries.
 
@@ -54,7 +54,7 @@ Depending on screen size the appearence may differ, see CSS media queries.
 ```
 Code Sample 2: Head section structure
 
-###Main Section
+### Main Section
 The main section can have single and double column layout.
 Double column may switch to single on mobile devices, see CSS media queries.
 The layout is assigned via classes.
@@ -84,7 +84,7 @@ Use ```<br class="clearfl" />``` after each row to clear the flow.
 ```
 Code Sample 3: Main section structure
 
-###Footer Section
+### Footer Section
 The footer section contains two subsections. Depending on screen size the appearence may differ, see CSS media queries.
 
 - ```<p class="version">...</p>```: Domain, version etc.
@@ -103,7 +103,7 @@ The footer section contains two subsections. Depending on screen size the appear
 Code Sample 4: Footer section structure
 
 
-##CSS Media Queries
+## CSS Media Queries
 CSS file can be found under: ```./css/simpleweb.css```.
 The following media queries are used to render the website for different screen sizes. You may adapt them for your needs.
 
@@ -120,7 +120,7 @@ Note: This breakpoint triggers switch to mobile view with hamburger icon ≡.
 This value is also used in javascript: ```var mobileWidth = 800;``` for switching to mobile view.
 
 
-##Icons and Images
+## Icons and Images
 Following minimalistic design, icons and images are used on a very low level.
 The following images are included in the template by default.
 You may adapt them for your needs or add some new images.
@@ -135,7 +135,7 @@ The ```touch-icon.png``` may also be used on windows or linux when adding the we
 But this may depend on screen resolution and resolution of the favicon.ico file.
 
 
-##Javascript
+## Javascript
 Javascript file can be found under: ```./js/simpleweb.js```.
 Javascript is used to switch between standard view and mobile view when resizing the window or switching orientation.
 Javascript also handles show/hide of the mobile navigation dropdown menue.
