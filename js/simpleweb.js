@@ -27,6 +27,7 @@ function resetNav() {
 		document.getElementById("navi").style.marginTop = "0px";
 		mobileNavi = false;
 	} else {
+		mobileNavi = false;
 		document.getElementById("navi").style.marginTop = "-500px";
 		document.getElementById("mobile").style.transform = "rotate(180deg)";
 	}
