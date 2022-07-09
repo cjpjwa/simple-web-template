@@ -3,6 +3,7 @@
 <head>
 <!-- general -->
 <title>Simple Web Template</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'" />
 <meta charset="utf-8" />
 <meta name="keywords" content="web, template, html, css" />
 <meta name="description" content="Simple Web Template" />
@@ -23,9 +24,10 @@
 ##########################################################
  Simple Web Template, (c) 2021 webapps@cjpj, P. Janko
  MIT License: https://www.cjpj.de/contact.htm#terms
+ https://github.com/cjpjwa/simple-web-template
 ##########################################################
 Date		Version		Description
-19.12.2021	0.01		initial version
+09.07.2022	0.01		initial version
 ##########################################################
 -->
 </head>
@@ -51,6 +53,7 @@ Date		Version		Description
 </nav>
 <!-- content -->
 <div class="main" id="top">
+<!-- ####################### single column ####################################### -->
 	<div class="col0">
 		<h1>Simple Web Template</h1>
 		<p>Simple Web Template provides a static, basic and simple HTML and CSS template for responsive web sites. The focus is on:</p>
@@ -60,7 +63,11 @@ Date		Version		Description
 			<li>Minimalistic and responsive design.</li>
 		</ul>
 
-		<hr />
+	</div>
+	<br class="clearfl" />
+	<hr />
+<!-- ####################### single column ####################################### -->
+	<div class="col0">
 		<h1>First Heading - Single Column</h1>
 		<h2>Second Heading</h2>
 		<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -68,16 +75,15 @@ Date		Version		Description
 		<p>This is a paragraph containing a <a href="#" >link</a>. This is an <a href="#" target="_blank" rel="noopener">external link</a> sample.</p>
 		<h3>Font Check</h3>
 		<ul>
-			<li style="font-family:monospace">The quick brown fox 123. mono</li>
-			<li style="font-family:serif">The quick brown fox 123. serif</li>
-			<li style="font-family:sans-serif">The quick brown fox 123. sans</li>
-			<li style="font-family:system-ui, -apple-system, 'Segoe UI', sans-serif">The quick brown fox 123. system</li>
-			<li>The quick brown fox 123. css</li>
+			<li class="fontmono">The quick brown fox 123. mono</li>
+			<li class="fontserif">The quick brown fox 123. serif</li>
+			<li class="fontsans">The quick brown fox 123. sans</li>
+			<li>The quick brown fox 123. default (System font)</li>
 		</ul>
-
-		<hr />
 	</div>
 	<br class="clearfl" />
+	<hr />
+<!-- ####################### double column ####################################### -->
 	<div class="col1">
 		<h1>First Heading - Left Column</h1>
 		<h2>Second Heading</h2>
@@ -87,7 +93,11 @@ Date		Version		Description
 			<li>This is a list item</li>
 			<li>This is a list item</li>
 		</ul>
-		<br />
+		<ol>
+			<li>This is a ordered list item</li>
+			<li>This is a ordered list item</li>
+			<li>This is a ordered list item</li>
+		</ol>
 	</div>
 	<div class="col2">
 		<h1>First Heading - Right Column</h1>
@@ -98,9 +108,40 @@ Date		Version		Description
 			<li>This is a list item</li>
 			<li>This is a list item</li>
 		</ul>
+		<ol>
+			<li>This is a ordered list item</li>
+			<li>This is a ordered list item</li>
+			<li>This is a ordered list item</li>
+		</ol>
+	</div>
+	<br class="clearfl" />
+	<hr />
+	<!-- ####################### single column ####################################### -->
+	<div class="col0">
+		<h3>Table Auto Width</h3>
+		<table>
+			<tr class="tblhead"><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th></tr>
+			<tr class="odd"><td>Cell 11</td><td>Cell 12</td><td>Cell 13</td><td>Cell 14</td></tr>
+			<tr class="even"><td>Cell 21</td><td>Cell 22</td><td>Cell 23</td><td>Cell 24</td></tr>
+			<tr class="odd"><td>Cell 31</td><td>Cell 32</td><td>Cell 33</td><td>Cell 34</td></tr>
+			<tr class="even"><td>Cell 41</td><td>Cell 42</td><td>Cell 43</td><td>Cell 44</td></tr>
+		</table>
+		<br />
+		<h3>Table Full Width</h3>
+		<table class="fullwidth">
+			<tr class="tblhead"><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th></tr>
+			<tr class="odd"><td>Cell 11</td><td>Cell 12</td><td>Cell 13</td><td>Cell 14</td></tr>
+			<tr class="even"><td>Cell 21</td><td>Cell 22</td><td>Cell 23</td><td>Cell 24</td></tr>
+			<tr class="odd"><td>Cell 31</td><td>Cell 32</td><td>Cell 33</td><td>Cell 34</td></tr>
+			<tr class="even"><td>Cell 41</td><td>Cell 42</td><td>Cell 43</td><td>Cell 44</td></tr>
+		</table>
+		<br />
 		<br />
 	</div>
 	<br class="clearfl" />
+
+
+
 </div>
 <!-- footer -->
 <footer>

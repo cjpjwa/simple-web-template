@@ -1,5 +1,7 @@
 //########################################################################################
-//simple web template, javascript, 19.12.2021
+// Simple Web Template, (c) 2021 webapps@cjpj, P. Janko
+// MIT License: https://www.cjpj.de/contact.htm#terms
+// https://github.com/cjpjwa/simple-web-template
 //########################################################################################
 //strict mode
 "use strict";

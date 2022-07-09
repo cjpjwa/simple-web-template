@@ -1,5 +1,7 @@
 /*########################################################################################
-simple web template, css, 19.12.2021
+ Simple Web Template, (c) 2021 webapps@cjpj, P. Janko
+ MIT License: https://www.cjpj.de/contact.htm#terms
+ https://github.com/cjpjwa/simple-web-template
 ########################################################################################*/
 
 /* ########## basic page settings - big screen size ##########  */
@@ -18,15 +20,30 @@ nav div#navi a		{display:inline-block; padding:0px; margin:32px 3px 0px 3px; fon
 nav div#navi a.active	{color:#337ab7; font-weight:bold}
 nav div#navi a:hover	{color:#337ab7; text-decoration:underline}
 
-div.main		{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300}
+div.main		{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300;}
 div.main h1		{padding:10px 0px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
-div.main h2		{padding:15px 10px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
+div.main h2		{padding:10px 10px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
 div.main h3		{padding:10px 10px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
 div.main p		{padding:10px 10px 5px 40px; margin:0px; font-size:18px; font-weight:normal;}
-div.main ul		{padding:10px 10px 5px 40px; margin:0px 0px 0px 0px;}
+div.main ul,ol		{padding:10px 10px 5px 40px; margin:0px 0px 0px 0px;}
 div.main li		{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal}
-div.main hr		{padding:0px; margin:30px 20px 30px 40px; border:none; border-top:1px solid #cccccc}
+div.main hr		{padding:0px; margin:30px 40px 30px 40px; border:none; border-top:1px solid #cccccc}
+
+div.main table			{padding:0px; margin:10px 10px 5px 40px; font-size:18px; border:1px solid #cccccc; border-collapse:separate; background:#ffffff; border-spacing:1px; border-radius:4px;}
+div.main table.fullwidth	{width:1120px}
+div.main th,td			{padding: 10px 10px 10px 10px; text-align:left;}
+div.main th				{text-align:center; font-weight:bold; border-bottom: 1px solid #cccccc;}
+div.main tr.tblhead			{background: #eeeeee}
+div.main tr.odd				{background: #ffffff}
+div.main tr.even			{background: #eeeeee}
+div.main td:first-child		{padding-left: 10px;}
+div.main td:last-child		{padding-right: 10px;}
+
 div.main br.clearfl	{clear:both}
+
+div .fontmono		{font-family:monospace}
+div .fontserif		{font-family:serif}
+div .fontsans		{font-family:sans-serif}
 
 div.main a		{color:#337ab7; text-decoration:underline}
 div.main a:hover	{color:#ff9933; text-decoration:underline}
@@ -52,6 +69,7 @@ noscript		{display:none}
 @media (max-width: 1200px) {
 	nav div.head	{width: 100%;}
 	div.main	{width: 100%; border:none}
+	div.main table.fullwidth	{width:94%}
 	footer div	{width: 100%;}
 }
 
@@ -62,6 +80,8 @@ noscript		{display:none}
 	nav div.logo img	{margin:15px 15px 0px 0px; width:50px;}
 	nav div.logo span	{margin:18px 0px 0px 0px;font-size:30px; font-weight:700}
 	nav div#navi a		{margin:30px 2px 0px 2px; font-size:18px;}
+	div.main table.fullwidth	{width:90%}
+	div.main .col0		{width:100%;}
 	div.main .col1		{width:100%;}
 	div.main .col2		{width:100%;}
 }
@@ -83,9 +103,11 @@ noscript		{display:none}
 	div.main h2		{padding:10px 5px 10px 20px; font-size:24px}
 	div.main h3		{padding:10px 5px 0px 20px; font-size:22px}
 	div.main p		{padding:10px 10px 5px 20px; font-size:18px; line-height:24px}
-	div.main ul		{padding:10px 10px 5px 20px;}
+	div.main ul,ol		{padding:10px 10px 5px 20px;}
 	div.main li		{margin:0px 0px 0px 20px; font-size:18px;}
 	div.main hr		{margin:20px 20px 15px 20px;}
+	div.main table	{margin:10px 10px 5px 20px; font-size:16px; font-size:16px; width:88%}
+	div.main table.fullwidth	{width:88%}
 
 	footer p		{padding:10px 10px 0px 10px; margin:0px; font-size:16px}
 	footer p.version	{float:none; text-align:center; display:block}
@@ -95,7 +117,7 @@ noscript		{display:none}
 	noscript a		{display:inline-block; padding:0px; margin:0px; font-size:14px; color:#333333; border:none; text-decoration:none}
 }
 
-/* iphone 5,SE */
+/* small size */
 @media (max-width: 320px) {
 	nav div.logo span	{font-size:24px;}
 }
