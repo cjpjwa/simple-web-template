@@ -40,6 +40,7 @@ function resetNav() {
 window.addEventListener("resize", resetNav); //trigger reset navigation
 document.addEventListener("DOMContentLoaded", function(event) {
 	document.getElementById("mobile").addEventListener("click", showHideNav); //handle mobile navigation
+	document.getElementById("mobile").addEventListener("keyup", showHideNav); //handle keyboard navigation	
 });
 
 
