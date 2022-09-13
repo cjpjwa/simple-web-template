@@ -20,39 +20,39 @@ nav div#navi a		{display:inline-block; padding:0px; margin:32px 3px 0px 3px; fon
 nav div#navi a.active	{color:#337ab7; font-weight:bold}
 nav div#navi a:hover	{color:#337ab7; text-decoration:underline}
 
-div.main		{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300;}
-div.main h1		{padding:10px 0px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
-div.main h2		{padding:10px 10px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
-div.main h3		{padding:10px 10px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
-div.main p		{padding:10px 10px 5px 40px; margin:0px; font-size:18px; font-weight:normal;}
-div.main ul,ol		{padding:10px 10px 5px 40px; margin:0px 0px 0px 0px;}
-div.main li		{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal}
-div.main hr		{padding:0px; margin:30px 40px 30px 40px; border:none; border-top:1px solid #cccccc}
+main		{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300;}
+main h1		{padding:10px 0px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
+main h2		{padding:10px 10px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
+main h3		{padding:10px 10px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
+main p		{padding:10px 10px 5px 40px; margin:0px; font-size:18px; font-weight:normal;}
+main ul,ol		{padding:10px 10px 5px 40px; margin:0px 0px 0px 0px;}
+main li		{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal}
+main hr		{padding:0px; margin:30px 40px 30px 40px; border:none; border-top:1px solid #cccccc}
 
-div.main table			{padding:0px; margin:10px 10px 5px 40px; font-size:18px; border:1px solid #cccccc; border-collapse:separate; background:#ffffff; border-spacing:1px; border-radius:4px;}
-div.main table.fullwidth	{width:1120px}
-div.main th,td			{padding: 10px 10px 10px 10px; text-align:left;}
-div.main th				{text-align:center; font-weight:bold; border-bottom: 1px solid #cccccc;}
-div.main tr.tblhead			{background: #eeeeee}
-div.main tr.odd				{background: #ffffff}
-div.main tr.even			{background: #eeeeee}
-div.main td:first-child		{padding-left: 10px;}
-div.main td:last-child		{padding-right: 10px;}
+main table			{padding:0px; margin:10px 10px 5px 40px; font-size:18px; border:1px solid #cccccc; border-collapse:separate; background:#ffffff; border-spacing:1px; border-radius:4px;}
+main table.fullwidth	{width:1120px}
+main th,td			{padding: 10px 10px 10px 10px; text-align:left;}
+main th				{text-align:center; font-weight:bold; border-bottom: 1px solid #cccccc;}
+main tr.tblhead			{background: #eeeeee}
+main tr.odd				{background: #ffffff}
+main tr.even			{background: #eeeeee}
+main td:first-child		{padding-left: 10px;}
+main td:last-child		{padding-right: 10px;}
 
-div.main br.clearfl	{clear:both}
+main br.clearfl	{clear:both}
 
 div .fontmono		{font-family:monospace}
 div .fontserif		{font-family:serif}
 div .fontsans		{font-family:sans-serif}
 
-div.main a		{color:#337ab7; text-decoration:underline}
-div.main a:hover	{color:#ff9933; text-decoration:underline}
-div.main a:active 	{color:#ff9933; text-decoration:underline}
-div.main a[target='_blank'] {background-position:center right; background-repeat:no-repeat; padding-right:15px; background-image:url(../images/extlink.png)}
+main a		{color:#337ab7; text-decoration:underline}
+main a:hover	{color:#ff9933; text-decoration:underline}
+main a:active 	{color:#ff9933; text-decoration:underline}
+main a[target='_blank'] {background-position:center right; background-repeat:no-repeat; padding-right:15px; background-image:url(../images/extlink.png)}
 
-div.main .col0		{padding:0px; margin:0px; width:98%; float:left; border:0px solid blue}
-div.main .col1		{padding:0px; margin:0px; width:49%; float:left; border:0px solid lime}
-div.main .col2		{padding:0px; margin:0px; width:49%; float:left; border:0px solid red}
+main .col0		{padding:0px; margin:0px; width:98%; float:left; border:0px solid blue}
+main .col1		{padding:0px; margin:0px; width:49%; float:left; border:0px solid lime}
+main .col2		{padding:0px; margin:0px; width:49%; float:left; border:0px solid red}
 
 footer 			{padding:0px 0px 0px 0px; margin:0px; border-top:1px solid #cccccc;}
 footer div		{padding:0px 0px 0px 0px; margin:0px auto; width: 1200px;}
@@ -68,8 +68,8 @@ noscript		{display:none}
 /* laptop size */
 @media (max-width: 1200px) {
 	nav div.head	{width: 100%;}
-	div.main	{width: 100%; border:none}
-	div.main table.fullwidth	{width:94%}
+	main	{width: 100%; border:none}
+	main table.fullwidth	{width:94%}
 	footer div	{width: 100%;}
 }
 
@@ -80,10 +80,10 @@ noscript		{display:none}
 	nav div.logo img	{margin:15px 15px 0px 0px; width:50px;}
 	nav div.logo span	{margin:18px 0px 0px 0px;font-size:30px; font-weight:700}
 	nav div#navi a		{margin:30px 2px 0px 2px; font-size:18px;}
-	div.main table.fullwidth	{width:90%}
-	div.main .col0		{width:100%;}
-	div.main .col1		{width:100%;}
-	div.main .col2		{width:100%;}
+	main table.fullwidth	{width:90%}
+	main .col0		{width:100%;}
+	main .col1		{width:100%;}
+	main .col2		{width:100%;}
 }
 
 /* smart phone size */
@@ -98,16 +98,16 @@ noscript		{display:none}
 	nav div#navi span	{display:none}
 	nav div#navi a		{display:block; padding:10px 10px 10px 20px; margin:0px; font-size:16px; font-weight:normal; color:#333333; border-bottom: 1px solid #cccccc; text-decoration:none}
 
-	div.main		{padding:90px 0px 0px 0px; width:100%; border:none}
-	div.main h1		{padding:10px 5px 10px 20px; font-size:26px;}
-	div.main h2		{padding:10px 5px 10px 20px; font-size:24px}
-	div.main h3		{padding:10px 5px 0px 20px; font-size:22px}
-	div.main p		{padding:10px 10px 5px 20px; font-size:18px; line-height:24px}
-	div.main ul,ol		{padding:10px 10px 5px 20px;}
-	div.main li		{margin:0px 0px 0px 20px; font-size:18px;}
-	div.main hr		{margin:20px 20px 15px 20px;}
-	div.main table	{margin:10px 10px 5px 20px; font-size:16px; font-size:16px; width:88%}
-	div.main table.fullwidth	{width:88%}
+	main		{padding:90px 0px 0px 0px; width:100%; border:none}
+	main h1		{padding:10px 5px 10px 20px; font-size:26px;}
+	main h2		{padding:10px 5px 10px 20px; font-size:24px}
+	main h3		{padding:10px 5px 0px 20px; font-size:22px}
+	main p		{padding:10px 10px 5px 20px; font-size:18px; line-height:24px}
+	main ul,ol		{padding:10px 10px 5px 20px;}
+	main li		{margin:0px 0px 0px 20px; font-size:18px;}
+	main hr		{margin:20px 20px 15px 20px;}
+	main table	{margin:10px 10px 5px 20px; font-size:16px; font-size:16px; width:88%}
+	main table.fullwidth	{width:88%}
 
 	footer p		{padding:10px 10px 0px 10px; margin:0px; font-size:16px}
 	footer p.version	{float:none; text-align:center; display:block}
