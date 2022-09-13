@@ -19,11 +19,11 @@ The page structure is based on three sections:
 	...
 	</div>
 </nav>
-<div class="main" id="top">
+<main id="top">
 	<div class="col0">
 	...
 	</div>
-</div>
+</main>
 <footer>
 	<div>
 	...
