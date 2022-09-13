@@ -10,7 +10,7 @@ The focus is on:
 The page structure is based on three sections:
 
 - Head section with basic navigation: ```<nav>...</nav>```
-- Main section with content: ```<div class="main" id="top">...</div>```
+- Main section with content: ```<main id="top">...</main>```
 - Footer section with version, legal stuff etc. ```<footer>...</footer>```
 
 ```
@@ -19,11 +19,11 @@ The page structure is based on three sections:
 	...
 	</div>
 </nav>
-<div class="main" id="top">
+<main id="top">
 	<div class="col0">
 	...
 	</div>
-</div>
+</main>
 <footer>
 	<div>
 	...
@@ -66,7 +66,7 @@ The layout is assigned via classes.
 Use ```<br class="clearfl" />``` after each row to clear the flow.
 
 ```
-<div class="main" id="top">
+<main id="top">
 
 	<div class="col0">
 	Single Column
@@ -80,7 +80,7 @@ Use ```<br class="clearfl" />``` after each row to clear the flow.
 	Right Column
 	</div>
 	<br class="clearfl" />
-</div>
+</main>
 ```
 Code Sample 3: Main section structure
 
