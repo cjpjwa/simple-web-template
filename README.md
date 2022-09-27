@@ -80,6 +80,7 @@ Use ```<br class="clearfl">``` after each row to clear the flow.
 	Right Column
 	</div>
 	<br class="clearfl">
+
 </main>
 ```
 Code Sample 3: Main section structure
@@ -106,10 +107,10 @@ CSS file can be found under: ```./css/simpleweb.css```.
 The following media queries are used to render the website for different screen sizes.
 
 - ```no query``` Desktop size, screen width greater 1200px
-- ```@media (max-width: 1200px)``` Latop size, max screen width 1200px
+- ```@media (max-width: 1200px)``` Laptop size, max screen width 1200px
 - ```@media (max-width: 1020px)``` Tablet size, max screen width 1020px
 - **Note:** breakpoint 1020px triggers double column switch to single column.
-- ```@media (max-width: 800px)``` SmartPhone size, max screen width 800px1 1)
+- ```@media (max-width: 800px)``` SmartPhone size, max screen width 800px 1)
 - **Note:** breakpoint 800px triggers switch to mobile view with hamburger icon ≡.
 - ```@media (max-width: 320px)``` Small size, folded devices , max screen width 320px
 - ```@media print``` Print view
