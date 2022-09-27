@@ -63,7 +63,7 @@ The layout is assigned via classes.
 - Use ```<div class="col1">``` (left) ```<div class="col2">``` (right) for double column layout.
 
 **Important:**
-Use ```<br class="clearfl" />``` after each row to clear the flow.
+Use ```<br class="clearfl">``` after each row to clear the flow.
 
 ```
 <main id="top">
@@ -71,7 +71,7 @@ Use ```<br class="clearfl" />``` after each row to clear the flow.
 	<div class="col0">
 	Single Column
 	</div>
-	<br class="clearfl" />
+	<br class="clearfl">
 
 	<div class="col1">
 	Left column
@@ -79,7 +79,7 @@ Use ```<br class="clearfl" />``` after each row to clear the flow.
 	<div class="col2">
 	Right Column
 	</div>
-	<br class="clearfl" />
+	<br class="clearfl">
 </main>
 ```
 Code Sample 3: Main section structure
