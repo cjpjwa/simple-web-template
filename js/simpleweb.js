@@ -1,5 +1,5 @@
 //########################################################################################
-// Simple Web Template, (c) 2021 webapps@cjpj, P. Janko
+// Simple Web Template, (c) 2022 webapps@cjpj, P. Janko
 // MIT License: https://www.cjpj.de/contact.htm#terms
 // https://github.com/cjpjwa/simple-web-template
 //########################################################################################
@@ -29,9 +29,9 @@ function resetNav() {
 		document.getElementById("navi").style.marginTop = "0px";
 		mobileNavi = false;
 	} else {
-		mobileNavi = false;
 		document.getElementById("navi").style.marginTop = "-500px";
-		document.getElementById("mobile").style.transform = "rotate(180deg)";
+		document.getElementById("mobile").style.transform = "rotate(0deg)";
+		mobileNavi = false;
 	}
 }
 
@@ -40,7 +40,7 @@ function resetNav() {
 window.addEventListener("resize", resetNav); //trigger reset navigation
 document.addEventListener("DOMContentLoaded", function(event) {
 	document.getElementById("mobile").addEventListener("click", showHideNav); //handle mobile navigation
-	document.getElementById("mobile").addEventListener("keyup", showHideNav); //handle keyboard navigation	
+	document.getElementById("mobile").addEventListener("keyup", showHideNav); //handle keyboard navigation
 });
 
 
