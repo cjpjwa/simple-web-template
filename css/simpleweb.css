@@ -21,11 +21,11 @@ nav div#navi a.active	{color:#337ab7; font-weight:bold}
 nav div#navi a:hover	{color:#337ab7; text-decoration:underline}
 
 main		{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300;}
-main h1		{padding:10px 0px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
-main h2		{padding:10px 10px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
-main h3		{padding:10px 10px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
-main p		{padding:10px 10px 5px 40px; margin:0px; font-size:18px; font-weight:normal;}
-main ul,ol		{padding:10px 10px 5px 40px; margin:0px 0px 0px 0px;}
+main h1		{padding:10px 40px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
+main h2		{padding:10px 40px 20px 40px; margin:0px; font-size:30px; font-weight:500;}
+main h3		{padding:10px 40px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
+main p		{padding:10px 40px 5px 40px; margin:0px; font-size:18px; font-weight:normal; line-height:26px}
+main ul,ol		{padding:10px 40px 5px 40px; margin:0px 0px 0px 0px;}
 main li		{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal}
 main hr		{padding:0px; margin:30px 40px 30px 40px; border:none; border-top:1px solid #cccccc}
 
@@ -50,9 +50,9 @@ main a:hover	{color:#ff9933; text-decoration:underline}
 main a:active 	{color:#ff9933; text-decoration:underline}
 main a[target='_blank'] {background-position:center right; background-repeat:no-repeat; padding-right:15px; background-image:url(../images/extlink.png)}
 
-main .col0		{padding:0px; margin:0px; width:98%; float:left; border:0px solid blue}
-main .col1		{padding:0px; margin:0px; width:49%; float:left; border:0px solid lime}
-main .col2		{padding:0px; margin:0px; width:49%; float:left; border:0px solid red}
+main .col0		{box-sizing:border-box; padding:0px; margin:0px; width:100%; float:left; border:0px solid blue}
+main .col1		{box-sizing:border-box; padding:0px; margin:0px; width:50%; float:left; border:0px solid lime}
+main .col2		{box-sizing:border-box; padding:0px; margin:0px; width:50%; float:left; border:0px solid red}
 
 footer 			{padding:0px 0px 0px 0px; margin:0px; border-top:1px solid #cccccc;}
 footer div		{padding:0px 0px 0px 0px; margin:0px auto; width: 1200px;}
@@ -69,7 +69,7 @@ noscript		{display:none}
 @media (max-width: 1200px) {
 	nav div.head	{width: 100%;}
 	main	{width: 100%; border:none}
-	main table.fullwidth	{width:94%}
+	main table.fullwidth	{width:90%}
 	footer div	{width: 100%;}
 }
 
@@ -80,7 +80,7 @@ noscript		{display:none}
 	nav div.logo img	{margin:15px 15px 0px 0px; width:50px;}
 	nav div.logo span	{margin:18px 0px 0px 0px;font-size:30px; font-weight:700}
 	nav div#navi a		{margin:30px 2px 0px 2px; font-size:18px;}
-	main table.fullwidth	{width:90%}
+	main table.fullwidth	{width:88%}
 	main .col0		{width:100%;}
 	main .col1		{width:100%;}
 	main .col2		{width:100%;}
@@ -92,21 +92,21 @@ noscript		{display:none}
 	nav div.logo		{margin:0px 0px 0px 20px; float:none;}
 	nav div.logo img	{margin:10px 10px 0px 0px; width:40px;}
 	nav div.logo span	{margin:16px 0px 0px 0px;font-size:24px;}
-	nav div#mobile		{display:inline-block; position:absolute; right:20px; top:18px; padding:0px; margin:0px; font-size:36px; line-height:24px; font-weight:bold; color:#333333; cursor:pointer;}
+	nav div#mobile		{display:inline-block; position:absolute; right:20px; top:18px; padding:0px; margin:0px; font-size:42px; line-height:26px; font-weight:normal; color:#333333; cursor:pointer;}
 
 	nav div#navi		{margin:-500px 0px 0px 0px; background:#eeeeee; float:none}
 	nav div#navi span	{display:none}
 	nav div#navi a		{display:block; padding:10px 10px 10px 20px; margin:0px; font-size:16px; font-weight:normal; color:#333333; border-bottom: 1px solid #cccccc; text-decoration:none}
 
 	main		{padding:90px 0px 0px 0px; width:100%; border:none}
-	main h1		{padding:10px 5px 10px 20px; font-size:26px;}
-	main h2		{padding:10px 5px 10px 20px; font-size:24px}
-	main h3		{padding:10px 5px 0px 20px; font-size:22px}
-	main p		{padding:10px 10px 5px 20px; font-size:18px; line-height:24px}
-	main ul,ol		{padding:10px 10px 5px 20px;}
+	main h1		{padding:10px 20px 10px 20px; font-size:26px;}
+	main h2		{padding:10px 20px 10px 20px; font-size:24px}
+	main h3		{padding:10px 20px 0px 20px; font-size:22px}
+	main p		{padding:10px 20px 5px 20px; font-size:18px; line-height:24px}
+	main ul,ol		{padding:10px 20px 5px 20px;}
 	main li		{margin:0px 0px 0px 20px; font-size:18px;}
 	main hr		{margin:20px 20px 15px 20px;}
-	main table	{margin:10px 10px 5px 20px; font-size:16px; width:88%}
+	main table	{margin:10px 20px 5px 20px; font-size:16px; width:88%}
 	main table.fullwidth	{width:88%}
 
 	footer p		{padding:10px 10px 0px 10px; margin:0px; font-size:16px}
