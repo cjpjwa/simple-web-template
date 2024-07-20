@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- general -->
+<title>Simple Web Template - Form Samples</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<meta charset="utf-8">
+<meta name="keywords" content="web, template, html, css">
+<meta name="description" content="Simple Web Template - Form Samples">
+<meta name="Author" content="P. Janko">
+<!-- ios webapp  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#cccccc">
+<!-- win tile icon and background  -->
+<meta name="msapplication-TileColor" content="#999999">
+<meta name="msapplication-TileImage" content="touch-icon.png">
+<!-- icons, css, js -->
+<link rel="apple-touch-icon" href="./touch-icon.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="css/simpleweb.css">
+<script src="js/simpleweb.js"></script>
+</head>
+<body>
+<!-- navigation -->
+<nav>
+	<div class="head">
+		<div class="logo"><a href="index.htm" aria-label="Back to start page"><img src="images/logo.png" alt="Your Logo"></a><span>Simple Web Template</span></div>
+		<div id="mobile" tabindex="0">≡</div>
+		<div id="navi">
+			<a href="index.htm">Home</a>
+			<span>|</span>
+			<a href="table.htm">Tables</a>
+			<span>|</span>
+			<a href="form.htm" class="active">Forms</a>
+			<span>|</span>
+			<a href="#">Link3</a>
+			<span>|</span>
+			<a href="#">Link4</a>
+		</div>
+
+	</div>
+</nav>
+<!-- content -->
+<main id="top">
+<!-- ####################### single column ####################################### -->
+	<div class="col0">
+		<h1>Sample Form Elements</h1>
+		<ul>
+			<li>Single Column Sample</li>
+			<li>Double Column Sample</li>
+		</ul>
+
+	</div>
+	<br class="clearfl">
+	<hr>
+
+	<!-- ####################### single column ####################################### -->
+	<div class="col0">
+		<h2>Single Column Sample</h2>
+		<form action="#" class="centered">
+		<button class="blarge" type="button">Button large</button>
+		<button class="bsmall blite" type="reset">Button small lite</button>
+		<button class="bsmall" type="submit">Button small</button>
+		<br>
+		<br>
+		<label for="selectbox">Select Box Label</label>
+		<select class="blarge" name="selectbox" id="selectbox">
+			<option value="0" selected="selected">Select Box large</option>
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+		</select>
+		<br>
+		<select class="bsmall blite" name="selectbox2" id="selectbox2">
+			<option value="0" selected="selected">Select Box small lite</option>
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+		</select>
+		<select class="bsmall" name="selectbox3" id="selectbox3">
+			<option value="0" selected="selected">Select Box small</option>
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+		</select>
+		<br>
+		<br>
+		<label for="inputtext">Text Input Label</label>
+		<input class="blarge" type="text" name="inputtext" id="inputtext" value="" placeholder="Sample Input Text large">
+		<input class="bsmall" type="text" name="inputtextd2" id="inputtextd2" value="" placeholder="Sample Input Text small">
+		<input class="bsmall" type="text" name="inputtextd3" id="inputtextd3" value="" placeholder="Sample Input Text small">
+ 		<label for="inputpw">Passwort Input Label</label>
+		<input class="blarge" type="password" name="inputpw" id="inputpw" value="" placeholder="Enter Password large">
+		<input class="bsmall" type="password" name="inputpw2" id="inputpw2" value="" placeholder="Enter Password small">
+		<input class="bsmall" type="password" name="inputpw3" id="inputpw3" value="" placeholder="Enter Password small">
+		<br>
+		<br>
+		<fieldset class="blarge">
+			<legend> Check Box Legend </legend>
+			<input type="checkbox" name="cbox0" id="cbox0" value=""><label class="cblabel" id="labelc0" for="cbox0">Check Box Label 0</label><br>
+			<input type="checkbox" name="cbox1" id="cbox1" value=""><label class="cblabel" id="labelc1" for="cbox1">Check Box Label 1</label><br>
+			<input type="checkbox" name="cbox2" id="cbox2" value=""><label class="cblabel" id="labelc2" for="cbox2">Check Box Label 2</label><br>
+		</fieldset>
+		<br>
+		<ul class="radiolist blarge">
+			<li><input type="radio" name="radioType" id="radio0" value="0"><label id="labelr0" for="radio0" class="color_0">Radio Button Label 0</label></li>
+			<li><input type="radio" name="radioType" id="radio1" value="1"><label id="labelr1" for="radio1" class="color_1">Radio Button Label 1</label></li>
+			<li><input type="radio" name="radioType" id="radio2" value="2"><label id="labelr2" for="radio2" class="color_2">Radio Button Label 2</label></li>
+		</ul>
+		</form>
+	</div>
+	<br class="clearfl">
+	<hr>
+<!-- ####################### double column ####################################### -->
+	<div class="col1">
+ 		<h2>Double Column Sample</h2>
+		<form action="#" class="centered">
+		<button class="blarge" type="button">Button large</button>
+		<br>
+		<label for="selectboxd">Select Box Label</label>
+		<select class="blarge" name="selectboxd" id="selectboxd">
+			<option value="0" selected="selected">Select Box large</option>
+			<option value="1">Value 1</option>
+			<option value="2">Value 2</option>
+			<option value="3">Value 3</option>
+		</select>
+		<br>
+		<label for="inputtextd">Text Input Label</label>
+		<input class="blarge" type="text" name="inputtextd" id="inputtextd" value="" placeholder="Sample Input Text">
+		<br>
+		<label for="inputtextd">Passwort Input Label</label>
+		<input class="blarge" type="password" name="inputpwd" id="inputpwd" value="" placeholder="Enter Password">
+		</form>
+		<br>
+	</div>
+	<div class="col2">
+		<h2>Double Column Sample</h2>
+		<form action="#" class="centered">
+		<fieldset class="blarge">
+			<legend> Check Box Legend </legend>
+			<input type="checkbox" name="cbox0d" id="cbox0d" value=""><label class="cblabel" id="labelc0d" for="cbox0d">Check Box Label 0</label><br>
+			<input type="checkbox" name="cbox1d" id="cbox1d" value=""><label class="cblabel" id="labelc1d" for="cbox1d">Check Box Label 1</label><br>
+			<input type="checkbox" name="cbox2d" id="cbox2d" value=""><label class="cblabel" id="labelc2d" for="cbox2d">Check Box Label 2</label><br>
+		</fieldset>
+		<br>
+		<ul class="radiolist blarge">
+			<li><input type="radio" name="radioTyped" id="radio0d" value="0"><label id="labelr0d" for="radio0d" class="color_0">Radio Button Label 0</label></li>
+			<li><input type="radio" name="radioTyped" id="radio1d" value="1"><label id="labelr1d" for="radio1d" class="color_1">Radio Button Label 1</label></li>
+			<li><input type="radio" name="radioTyped" id="radio2d" value="2"><label id="labelr2d" for="radio2d" class="color_2">Radio Button Label 2</label></li>
+		</ul>
+		</form>
+		<br>
+	</div>
+	<br class="clearfl">
+	<hr>
+<!-- ####################### single column ####################################### -->
+	<div class="col0">
+		<form action="#" class="centered">
+		<h2>Login Sample</h2>
+		<fieldset class="blarge centered">
+			<legend> Login </legend>
+			<label for="inputtextd2">Username</label>
+			<input class="blarge" type="text" name="inputtextd4" id="inputtextd4" value="" placeholder="Enter Username">
+			<br>
+			<label for="inputpwd4">Passwort</label>
+			<input class="blarge" type="password" name="inputpwd4" id="inputpwd4" value="" placeholder="Enter Password">
+			<br>
+			<br>
+			<button class="bsmall blite" type="reset">Reset</button>
+			<button class="bsmall" type="submit">Login</button>
+			<br>
+			<p><a href="#">Password Forgotten?</a></p>
+			<br>
+		</fieldset>
+		</form>
+		<br>
+
+	</div>
+	<br class="clearfl">
+	<br>
+</main>
+<!-- footer -->
+<footer>
+	<div>
+		<p class="version">© <a href="#">www.yourdomain.xyz</a> 07/2024</p>
+		<p class="legal"><a href="#">Contact</a> | <a href="#">Disclaimer</a> | <a href="#">Legal Stuff</a></p>
+	</div>
+</footer>
+<br class="clearfl">
+<!-- fallback navigation -->
+<noscript>
+	<a href="index.htm">Home</a>
+	<a href="table.htm">Tables</a>
+	<a href="form.htm">Forms</a>
+	<a href="#">Link3</a>
+	<a href="#">Link4</a>
+</noscript>
+</body>
+</html>

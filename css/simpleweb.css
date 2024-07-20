@@ -1,5 +1,5 @@
 /*########################################################################################
- Simple Web Template, (c) 2021 webapps@cjpj, P. Janko
+ Simple Web Template, (c) 2024 webapps@cjpj, P. Janko
  MIT License: https://www.cjpj.de/contact.htm#terms
  https://github.com/cjpjwa/simple-web-template
 ########################################################################################*/
@@ -26,10 +26,10 @@ main h2		{padding:10px 40px 20px 40px; margin:0px; font-size:30px; font-weight:5
 main h3		{padding:10px 40px 0px 40px; margin:0px; font-size:24px; font-weight:500;}
 main p		{padding:10px 40px 5px 40px; margin:0px; font-size:18px; font-weight:normal; line-height:26px}
 main ul,ol		{padding:10px 40px 5px 40px; margin:0px 0px 0px 0px;}
-main li		{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal}
+main li		{padding:0px; margin:8px 0px 0px 30px; font-size:18px; color:#333333; font-weight:normal; line-height:28px}
 main hr		{padding:0px; margin:30px 40px 30px 40px; border:none; border-top:1px solid #cccccc}
 
-main table			{padding:0px; margin:10px 10px 5px 40px; font-size:18px; border:1px solid #cccccc; border-collapse:separate; background:#ffffff; border-spacing:1px; border-radius:4px;}
+main table			{padding:0px; margin:10px 40px 5px 40px; font-size:18px; border:1px solid #cccccc; border-collapse:separate; background:#ffffff; border-spacing:1px; border-radius:4px;}
 main table.fullwidth	{width:1120px}
 main th,td			{padding: 10px 10px 10px 10px; text-align:left;}
 main th				{text-align:center; font-weight:bold; border-bottom: 1px solid #cccccc;}
@@ -38,6 +38,42 @@ main tr.odd				{background: #ffffff}
 main tr.even			{background: #eeeeee}
 main td:first-child		{padding-left: 10px;}
 main td:last-child		{padding-right: 10px;}
+
+/* to switch off safari ios style of form elements use:  -webkit-appearance:none */
+main form							{padding:0px; margin:0px; font-size:18px}
+main .centered						{text-align:center}
+main .blarge 						{display:inline-block; width:85%;}
+main .bsmall 						{display:inline-block; width:40%; margin-left:10px; margin-right:10px;}
+main .blite 						{color:#333333; background:#eeeeee; border:1px solid #666666;}
+
+main button 						{padding:10px; margin:10px auto; border:1px solid #666666; background:#337ab7; color:#eeeeee; font-size:18px; text-align:center; cursor:pointer; border-radius:4px;}
+main button:hover					{background:#cccccc; color:#333333}
+main button:active					{padding:9px; border:2px solid #ff9933;}
+
+main select							{padding:10px; margin:10px auto; color:#eeeeee; font-size:18px; background:#337ab7; border:1px solid #666666; border-radius:4px;}
+main select option					{background:#eeeeee; color:#333333;}
+
+main fieldset						{padding:0px; margin:10px auto; padding-bottom:7px; font-weight: normal; display:block; color:#333333; text-align:left; border:1px solid #333333; border-radius:4px;}
+main legend							{padding:0px 20px 0px 20px; margin:0px; text-align:center; font-size:18px}
+main label							{padding:0px; margin:0px auto; margin-top:10px; font-weight:normal; display:block; text-align:center; font-size:18px}
+main label.cblabel					{padding:6px 0px 6px 0px; margin:0px; position:relative; top:-5px;  display:inline-block; width:auto;}
+
+main input[type="text"]				{padding:10px; margin:10px auto; border:1px solid #666666; background:#eeeeee; color:#333333; font-size:18px; border-radius:4px;}
+main input[type="text"].blarge 		{width:83%;}
+main input[type="text"].bsmall 		{width:38%; margin-left:10px; margin-right:10px;}
+main input[type="password"]			{padding:10px; margin:10px auto; border:1px solid #666666; background:#eeeeee; color:#333333; font-size:18px; border-radius:4px;}
+main input[type="password"].blarge 	{width:83%;}
+main input[type="password"].bsmall 	{width:38%; margin-left:10px; margin-right:10px;}
+
+main input[type="checkbox"]			{padding: 1px; margin:10px 20px 10px 20px; width:22px; height:22px; border:1px solid #333333}
+
+main ul.radiolist					{padding:0px; margin:20px auto; list-style-type:none;}
+main ul.radiolist li				{padding:0px; margin:0px; background:#ffffff; border-bottom: 1px solid #cccccc; border-left: 1px solid #666666; border-right: 1px solid #666666; text-align:left;}
+main ul.radiolist li input			{padding:1px; margin:10px 20px 10px 20px; width:22px; height:22px; border:1px solid #333333}
+main ul.radiolist li label			{padding:6px 0px 6px 0px; margin:0px; position:relative; top:-4px; display:inline-block; width:75%; font-size:18px; text-align:left}
+main ul.radiolist li:first-child 	{border-top-left-radius:4px; border-top-right-radius:4px; border-top: 1px solid #333333;}
+main ul.radiolist li:last-child 	{border-bottom-left-radius:4px; border-bottom-right-radius:4px; border-bottom: 1px solid #333333;}
+main ul.radiolist li:hover 			{background:#eeeeee;}
 
 main br.clearfl	{clear:both}
 
@@ -106,8 +142,22 @@ noscript		{display:none}
 	main ul,ol		{padding:10px 20px 5px 20px;}
 	main li		{margin:0px 0px 0px 20px; font-size:18px;}
 	main hr		{margin:20px 20px 15px 20px;}
+
 	main table	{margin:10px 20px 5px 20px; font-size:16px; width:88%}
 	main table.fullwidth	{width:88%}
+
+	main input[type="text"].blarge 		{width:82%;}
+	main input[type="text"].bsmall 		{width:35%;}
+	main input[type="password"].blarge 	{width:82%;}
+	main input[type="password"].bsmall 	{width:35%;}
+
+	main button					{font-size:16px;}
+	main select					{font-size:16px;}
+	main legend					{font-size:16px;}
+	main label					{font-size:16px;}
+	main input[type="text"]		{font-size:16px;}
+	main input[type="password"]	{font-size:16px;}
+	main ul.radiolist li label	{font-size:16px;}
 
 	footer p		{padding:10px 10px 0px 10px; margin:0px; font-size:16px}
 	footer p.version	{float:none; text-align:center; display:block}
