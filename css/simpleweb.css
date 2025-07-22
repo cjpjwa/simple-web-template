@@ -1,5 +1,5 @@
 /*########################################################################################
- Simple Web Template, (c) 2024 webapps@cjpj, P. Janko
+ Simple Web Template, (c) 2025 webapps@cjpj, P. Janko
  MIT License: https://www.cjpj.de/contact.htm#terms
  https://github.com/cjpjwa/simple-web-template
 ########################################################################################*/
@@ -7,18 +7,18 @@
 /* ########## basic page settings - big screen size ##########  */
 body			{padding:0px; margin:0px; background:#ffffff; color:#333333; font-family:system-ui, -apple-system, 'Segoe UI', sans-serif; -webkit-text-size-adjust: none;}
 
-nav			{position:fixed; top:0px; left:0px; padding:0px; margin:0px; background:#eeeeee; height:90px; width:100%; border-top:10px solid #337ab7; border-bottom:1px solid #cccccc; z-index:500}
-nav div.head		{padding:0px; margin:0px auto; width:1200px;}
-nav div.logo		{padding:0px; margin:0px 5px 0px 40px; float:left;}
-nav div.logo a		{padding:0px; margin:0px; text-decoration:none; border:none; float:left;}
-nav div.logo img	{padding:0px; margin:16px 16px 0px 0px; display:inline-block; width:60px;}
-nav div.logo span	{padding:0px; margin:17px 0px 0px 0px; display:inline-block; font-size:38px; font-weight:bold; color:#333333;}
-nav div#mobile		{display:none;}
+header			{position:fixed; top:0px; left:0px; padding:0px; margin:0px; background:#eeeeee; height:90px; width:100%; border-top:10px solid #337ab7; border-bottom:1px solid #cccccc; z-index:500}
+header div.head		{padding:0px; margin:0px auto; width:1200px;}
+header div.logo		{padding:0px; margin:0px 5px 0px 40px; float:left;}
+header div.logo a		{padding:0px; margin:0px; text-decoration:none; border:none; float:left;}
+header div.logo img	{padding:0px; margin:16px 16px 0px 0px; display:inline-block; width:60px;}
+header div.logo span	{padding:0px; margin:17px 0px 0px 0px; display:inline-block; font-size:38px; font-weight:bold; color:#333333;}
+header div#mobile		{display:none;}
 
-nav div#navi		{padding:0px; margin:0px 40px 0px 0px; color:#cccccc; font-size:22px; float:right;}
-nav div#navi a		{display:inline-block; padding:0px; margin:32px 3px 0px 3px; font-size:22px; font-weight:400; color:#333333; text-decoration:none}
-nav div#navi a.active	{color:#337ab7; font-weight:bold}
-nav div#navi a:hover	{color:#337ab7; text-decoration:underline}
+header nav#navi		{padding:0px; margin:0px 40px 0px 0px; color:#cccccc; font-size:22px; float:right;}
+header nav#navi a		{display:inline-block; padding:0px; margin:32px 3px 0px 3px; font-size:22px; font-weight:400; color:#333333; text-decoration:none}
+header nav#navi a.active	{color:#337ab7; font-weight:bold}
+header nav#navi a:hover	{color:#337ab7; text-decoration:underline}
 
 main		{padding:120px 0px 0px 0px; margin:0px auto; width:1200px; border-left:1px solid #cccccc; z-index:300;}
 main h1		{padding:10px 40px 10px 40px; margin:0px; font-size:32px; font-weight:bold;}
@@ -103,7 +103,7 @@ noscript		{display:none}
 
 /* laptop size */
 @media (max-width: 1200px) {
-	nav div.head	{width: 100%;}
+	header div.head	{width: 100%;}
 	main	{width: 100%; border:none}
 	main table.fullwidth	{width:90%}
 	footer div	{width: 100%;}
@@ -111,11 +111,11 @@ noscript		{display:none}
 
 /* tablet size */
 @media (max-width: 1020px) {
-	nav			{height:80px;}
-	nav div.logo		{margin:0px 0px 0px 40px;}
-	nav div.logo img	{margin:15px 15px 0px 0px; width:50px;}
-	nav div.logo span	{margin:18px 0px 0px 0px;font-size:30px; font-weight:700}
-	nav div#navi a		{margin:30px 2px 0px 2px; font-size:18px;}
+	header			{height:80px;}
+	header div.logo		{margin:0px 0px 0px 40px;}
+	header div.logo img	{margin:15px 15px 0px 0px; width:50px;}
+	header div.logo span	{margin:18px 0px 0px 0px;font-size:30px; font-weight:700}
+	header nav#navi a		{margin:30px 2px 0px 2px; font-size:18px;}
 	main table.fullwidth	{width:88%}
 	main .col0		{width:100%;}
 	main .col1		{width:100%;}
@@ -124,15 +124,15 @@ noscript		{display:none}
 
 /* smart phone size */
 @media (max-width: 800px) {
-	nav			{height:60px;}
-	nav div.logo		{margin:0px 0px 0px 20px; float:none;}
-	nav div.logo img	{margin:10px 10px 0px 0px; width:40px;}
-	nav div.logo span	{margin:16px 0px 0px 0px;font-size:24px;}
-	nav div#mobile		{display:inline-block; position:absolute; right:20px; top:18px; padding:0px; margin:0px; font-size:42px; line-height:26px; font-weight:normal; color:#333333; cursor:pointer;}
+	header			{height:60px;}
+	header div.logo		{margin:0px 0px 0px 20px; float:none;}
+	header div.logo img	{margin:10px 10px 0px 0px; width:40px;}
+	header div.logo span	{margin:16px 0px 0px 0px;font-size:24px;}
+	header div#mobile		{display:inline-block; position:absolute; right:20px; top:18px; padding:0px; margin:0px; font-size:42px; line-height:26px; font-weight:normal; color:#333333; cursor:pointer;}
 
-	nav div#navi		{margin:-500px 0px 0px 0px; background:#eeeeee; float:none}
-	nav div#navi span	{display:none}
-	nav div#navi a		{display:block; padding:10px 10px 10px 20px; margin:0px; font-size:16px; font-weight:normal; color:#333333; border-bottom: 1px solid #cccccc; text-decoration:none}
+	header nav#navi		{margin:-500px 0px 0px 0px; background:#eeeeee; float:none}
+	header nav#navi span	{display:none}
+	header nav#navi a		{display:block; padding:10px 10px 10px 20px; margin:0px; font-size:16px; font-weight:normal; color:#333333; border-bottom: 1px solid #cccccc; text-decoration:none}
 
 	main		{padding:90px 0px 0px 0px; width:100%; border:none}
 	main h1		{padding:10px 20px 10px 20px; font-size:26px;}
@@ -169,14 +169,14 @@ noscript		{display:none}
 
 /* small size */
 @media (max-width: 320px) {
-	nav div.logo span	{font-size:24px;}
+	header div.logo span	{font-size:24px;}
 }
 
 /* print view */
 @media print {
-	nav			{position:absolute; background:none;}
-	nav div#navi		{display:none;}
-	nav div#mobile		{display:none;}
-	noscript		{display:none}
+	header				{position:absolute; background:none;}
+	header nav#navi		{display:none;}
+	header div#mobile	{display:none;}
+	noscript			{display:none}
 }
 

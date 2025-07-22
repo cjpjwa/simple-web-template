@@ -9,16 +9,16 @@ The focus is on:
 ## HTML Page Structure
 The page structure is based on three sections:
 
-- Head section with basic navigation: ```<nav>...</nav>```
+- Header section with basic navigation: ```<header>...</header>```
 - Main section with content: ```<main id="top">...</main>```
 - Footer section with version, legal stuff etc. ```<footer>...</footer>```
 
 ```
-<nav>
+<header>
 	<div class="head">
 	...
 	</div>
-</nav>
+</header>
 <main id="top">
 	<div class="col0">
 	...
@@ -32,27 +32,27 @@ The page structure is based on three sections:
 ```
 Code Sample 1: Basic page structure
 
-### Head Section
-The head section contains three subsections.
+### Header Section
+The header section contains three subsections.
 Depending on screen size the appearence may differ, see CSS media queries.
 
 - ```<div class="logo">...</div>```: Logo image, company etc.
 - ```<div id="mobile">≡</div>```: Hamburger menue ≡ for mobile devices
-- ```<div id="navi">...</div>```: Navigation links
+- ```<nav id="navi">...</nav>```: Navigation links
 
 ```
-<nav>
+<header>
 	<div class="head">
 		<div class="logo">...</div>
 		<div id="mobile">≡</div>
-		<div id="navi">
+		<nav id="navi">
 			<a href="index.htm">Home</a>
 			...
-		</div>
+		</nav>
 	</div>
-</nav>
+</header>
 ```
-Code Sample 2: Head section structure
+Code Sample 2: Header section structure
 
 ### Main Section
 The main section can have single and double column layout.
